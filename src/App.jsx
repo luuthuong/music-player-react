@@ -22,10 +22,10 @@ function App() {
   const [playPauseImg, setPlayPause] = useState(play);
   const [livestream, playLiveStream] = useState(false);
   const [pauseScreen, setPauseScreen] = useState("pauseScreen");
-  const [currentLivestream, setLivestream] = useState(videosJSON.at(DEFAULT_INDEX).urlLive);
+  const [currentLivestream, setLivestream] = useState(URL_CONSTANT.LIVE_URL.replace("{id}",videosJSON.at(DEFAULT_INDEX).urlLive));
   const [stationName, setStationName] = useState(videosJSON.at(DEFAULT_INDEX).displayName);
-  const [youtubeChannel, setYoutubeChannal] = useState(videosJSON.at(DEFAULT_INDEX).urlChannel);
-  const [video, setVideo] = useState(videosJSON.at(DEFAULT_INDEX).urlVideo);
+  const [youtubeChannel, setYoutubeChannal] = useState(URL_CONSTANT.CHANNEL_URL.replace("{id}",videosJSON.at(DEFAULT_INDEX).urlChannel));
+  const [video, setVideo] = useState(URL_CONSTANT.EMBBED_URL.replace("{id}",videosJSON.at(DEFAULT_INDEX).urlVideo));
 
   const handlePausePlaySwitch = (e) => {
     let className = e.target.className;
