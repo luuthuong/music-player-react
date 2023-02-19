@@ -13,6 +13,7 @@ import play from "./images/play.svg";
 import "./styles/audioControl.css";
 import "./styles/index.css";
 import { Link } from 'react-router-dom';
+import URL_CONSTANT from './constant/url.constant';
 const DEFAULT_INDEX = 7;
 
 function App() {
@@ -60,10 +61,10 @@ function App() {
     return {
       action:() =>{
         {
-          setVideo(item.urlVideo);
+          setVideo(URL_CONSTANT.EMBBED_URL.replace('{id}', item.urlVideo));
           setStationName(item.displayName);
-          setYoutubeChannal(item.urlChannel);
-          setLivestream(item.urlLive);
+          setYoutubeChannal(URL_CONSTANT.CHANNEL_URL.replace('{id}', item.urlChannel));
+          setLivestream(URL_CONSTANT.LIVE_URL.replace('{id}', item.urlLive));
           playLiveStream(true);
           setPauseScreen("unpauseScreen");
           setPlayPause(pauseImg);

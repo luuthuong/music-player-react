@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 import "../styles/introScreen.css"
 import logo from '../images/logo.jpeg'
 import { Link } from 'react-router-dom';
+import URL_CONSTANT from "../constant/url.constant";
 
 const Hero = () => {
     return(
@@ -11,7 +12,7 @@ const Hero = () => {
           <div className="videoContainer2">
             <ReactPlayer
               className="react-player"
-              url="//youtu.be/2gliGzb2_1I?t=18"
+              url={URL_CONSTANT.INTRO_EMMBED_VIDEO}
               width="100%"
               height="100%"
               position="relative"
@@ -43,7 +44,7 @@ const Hero = () => {
         </div>
         <ReactPlayer 
               className="react-player"
-              url="//www.youtube.com/embed/lf6refTxQs8?autoplay=1&mute=0&start=10"
+              url= {URL_CONSTANT.INTRO_LIVE_VIDEO}
               width="0%"
               height="0%"
               position="absolute"
