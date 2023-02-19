@@ -81,7 +81,7 @@ function App() {
       <div className="radioContainer">
         <div className="logo">
           <Link to="/">
-            StudyBeats
+            CHILL BEAT
           </Link>
         </div>
         <div className="subHeading"></div>
