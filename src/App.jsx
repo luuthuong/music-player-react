@@ -12,7 +12,7 @@ import pauseImg from "./images/pause.png";
 import play from "./images/play.svg";
 import "./styles/audioControl.css";
 import "./styles/index.css";
-
+import { Link } from 'react-router-dom';
 const DEFAULT_INDEX = 7;
 
 function App() {
@@ -78,7 +78,11 @@ function App() {
   return (
     <div className="interfaceContainer">
       <div className="radioContainer">
-        <div className="logo">StudyBeats</div>
+        <div className="logo">
+          <Link to="/">
+            StudyBeats
+          </Link>
+        </div>
         <div className="subHeading"></div>
         <div className="radioStationsContainer">
           <RadioStations

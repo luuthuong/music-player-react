@@ -127,6 +127,15 @@ html, body {
   z-index: 1;
 }
 
+.logo a{
+  text-decoration: none;
+  color: #efe9e9;
+  transition: color .3s linear;
+}
+.logo a:hover{
+  color: white;
+}
+
 .subHeading{
   width: 99%;
   height: 7%;
