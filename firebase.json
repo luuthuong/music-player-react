@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/",
     "site": "player-4u",
     "ignore": [
       "firebase.json",
