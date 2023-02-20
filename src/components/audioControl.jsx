@@ -71,6 +71,7 @@ const AudioControls = ({
         playing={LiveStreamPlayPause}
         volume={volume}
         url={LiveStreamAudio}
+        loop={true}
       />
     </div>
   );
