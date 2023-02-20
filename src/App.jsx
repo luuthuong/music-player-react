@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import AdditionSettings from "./components/additionalInfo";
 import AudioControls from "./components/audioControl";
@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 import URL_CONSTANT from './constant/url.constant';
 const DEFAULT_INDEX = 0;
 
-function App({data}) {
+function App({data, title}) {
   const [BtnClass, setBtnClass] = useState("PlayPause"); //pause play change
   const [BtnClass2, setBtnClass2] = useState("playBtn");
   const [playPauseImg, setPlayPause] = useState(play);
@@ -27,6 +27,9 @@ function App({data}) {
   const [youtubeChannel, setYoutubeChannal] = useState(URL_CONSTANT.CHANNEL_URL.replace("{id}",data.at(DEFAULT_INDEX).urlChannel));
   const [video, setVideo] = useState(URL_CONSTANT.EMBBED_URL.replace("{id}",data.at(DEFAULT_INDEX).urlVideo));
 
+  useEffect(() =>{
+    document.title = title;
+  },[]);
   const handlePausePlaySwitch = (e) => {
     let className = e.target.className;
     switch(className){

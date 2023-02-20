@@ -8,8 +8,8 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Hero/>} />
-        <Route path="/music" element={<App data={musicVideoJson} />} />
-        <Route path="/podcast" element={<App data={podCastVideoJson}/>} />
+        <Route path="/music" element={<App data={musicVideoJson} title="Music 😊" />} />
+        <Route path="/podcast" element={<App data={podCastVideoJson} title="PodCast 😊" />} />
       </Routes>
     </BrowserRouter>
   );
