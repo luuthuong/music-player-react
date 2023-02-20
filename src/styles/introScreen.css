@@ -4,14 +4,14 @@ html,body{
     overflow: hidden;
   }
   
-  .videoContainer2{
+  .video-intro-container{
     height: 100%;
     width: 100%;
     overflow: hidden;
     
   }
   
-  .heroContainer{
+  .container{
     height: 150%;
     width: 150%;
     position: absolute;
@@ -26,15 +26,15 @@ html,body{
     animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000)2s both;
     z-index: 2;
     position: relative;
-    left: 65%;
+    left: 75%;
     bottom: -200px;
     width: 100%;
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-weight: 200;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 7px;
-    font-size: 37px;
+    letter-spacing: 15px;
+    font-size: 45px;
     transform: scale(1, 0.9);
   }
   
@@ -60,7 +60,7 @@ html,body{
     }
   }
   
-  .titleContainer{
+  .title-container{
     position: absolute;
     right: 30%;
     height: 100%;
@@ -68,17 +68,17 @@ html,body{
     flex-direction: column;
   }
   
-  .heroLogo{
+  .intro-logo{
     width: 34px;
     height: 34px;
     z-index: 10;
     position: absolute;
-    left: 167%;
+    left: 67%;
     top: 228px;
     filter: invert(93%) sepia(81%) saturate(0%) hue-rotate(187deg) brightness(109%) contrast(101%);
   }
   
-  .heroLogo{
+  .intro-logo{
       -webkit-animation: flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)3s both;
               animation: flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)3s both;
   }
@@ -116,12 +116,13 @@ html,body{
     width: 100%;
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 15px;
     transform: scale(1, 0.9);
     margin: 0;
+    text-align: center;
   }
   
   .subTitle {
@@ -206,8 +207,9 @@ html,body{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 20;
+    justify-content: space-between;
+    gap: 50px;
+    z-index: 100;
   }
   
   .button {
@@ -235,6 +237,8 @@ html,body{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 15px;
+    transition: all .3s ease;
+    letter-spacing: 6px;
     }
   
   button::before {
@@ -242,7 +246,7 @@ html,body{
     border-radius: 1000px;
     min-width: calc(300px + 12px);
     min-height: calc(60px + 12px);
-    border: 6px solid #ffffff;
+    border: 4px solid rgba(255, 255, 255, 0.537);
     box-shadow: 0 0 60px rgba(255, 255, 255, 0.64);
     position: absolute;
     top: 50%;
@@ -251,8 +255,13 @@ html,body{
     opacity: 0;
     transition: all .3s ease-in-out 0s;
     z-index: -2;
+    pointer-events: none;
   }
-  
+
+  button:hover{
+    border: none;
+    font-weight: 500;
+  }
   .button:hover, .button:focus {
     color: #ffffff;
     transform: translateY(-6px);
@@ -273,6 +282,7 @@ html,body{
     left: 50%;
     transform: translate(-50%, -50%);
     animation: ring 1.5s infinite;
+    pointer-events: none;
   }
   
   button:hover::after, button:focus::after {

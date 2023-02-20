@@ -51,7 +51,7 @@ html, body {
   color: white;
 }
 
-.radioList{
+.radio-list{
   min-width: 75%;
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@ html, body {
 
 
 
-.socialsContainer2{
+.social-container-2{
   color: white;
   width: 99%;
   height: 70%;
@@ -82,11 +82,15 @@ html, body {
   z-index: 1;
 }
 
-.githubLogo{
+.social-logo{
     min-width: 17px;
     height: 17px;
     filter: invert(92%) sepia(0%) saturate(0%) hue-rotate(222deg) brightness(97%) contrast(86%);
     margin-right: 7px;
+}
+
+.social-logo:last-child{
+  margin-top: 8px;
 }
 
 .link{
@@ -105,7 +109,6 @@ html, body {
 
 .link2:hover, .link:hover{
   color: white;
- 
 }
 
 .logo{
@@ -165,7 +168,7 @@ html, body {
   cursor: pointer;
 }
 
-.activeStation{
+.active-station{
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -193,7 +196,7 @@ html, body {
   cursor:pointer;
 }
 
-.activeTriangle{
+.active-triangle{
   width: 12px;
   height: 14px;
   padding-right: 12px;
@@ -201,7 +204,7 @@ html, body {
   cursor:pointer;
 }
 
-.songName{
+.song-name{
   min-width: 100%;
   height: 99%;
   text-align: center;
@@ -223,13 +226,13 @@ html, body {
   color: white;
 }
 
-.infoContainer{
+.info-container{
   display: flex;
   flex-direction: column;
   min-width: 20vw;
 }
 
-.otherSoundsContainer{
+.other-sound-container{
   width: 100%;
   height: 10%;
   text-align: center;
@@ -241,7 +244,7 @@ html, body {
   z-index: 1;
 }
 
-.otherSounds{
+.other-sounds{
   min-height: 40px;
   min-width: 40px;
   border-radius: 50%;
@@ -254,14 +257,14 @@ html, body {
   margin-right: 6px;
 }
 
-  .imgSizing{
+  .img-sizing{
     min-width: 20px;
     height: 20px;
     margin-left: -1px;
     filter: invert(92%) sepia(0%) saturate(0%) hue-rotate(222deg) brightness(97%) contrast(86%);
 }
 
-.soundDial{
+.sound-dial{
   display: none;
 }
 
@@ -279,7 +282,7 @@ input[type=range][orient=vertical]
     transform: rotate(270deg);
 }
 
-.soundDial::-webkit-slider-thumb {
+.sound-dial::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 15px;
@@ -290,18 +293,18 @@ input[type=range][orient=vertical]
   border-radius: 50%;
 }
 
-.allign{
+.align{
   display: flex;
   flex-direction: column;
   height: 100px;
   justify-content: end;
 }
 
-.allign:hover .soundDial{
+.align:hover .sound-dial{
   display: block;
 }
 
-.radioStationTitle{
+.radio-station-title{
   font-size: 32px;
   /* width: min-content; */
   color: white;
@@ -313,7 +316,7 @@ input[type=range][orient=vertical]
   border-bottom: 1px white solid;
 }
 
-.socialIcons{
+.social-icon{
   filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(253deg) brightness(112%) contrast(103%);
   width: 18px;
   height: 18px;
@@ -335,7 +338,7 @@ input[type=range][orient=vertical]
   width: 100vw;
 }
 
-.videoContainer {
+.video-container {
   position: absolute;
   z-index: -1;
   height: 100%;
@@ -344,7 +347,7 @@ input[type=range][orient=vertical]
   left: -230px;
 }
 
-.liveStreamPlayer{
+.live-stream-player{
   position: absolute;
   top: -1000px;
   left: -1000px;

@@ -36,7 +36,7 @@ const AudioControls = ({
   const [volume, setVolume] = useState(0.35);
 
   return (
-    <div className="audioControl">
+    <div className="audio-control">
       <motion.div
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.9 }}
@@ -67,7 +67,7 @@ const AudioControls = ({
         />
       </div>
       <ReactPlayer
-        className="liveStreamPlayer"
+        className="live-stream-player"
         playing={LiveStreamPlayPause}
         volume={volume}
         url={LiveStreamAudio}

@@ -10,12 +10,12 @@ function RadioStations({ StationName, Videos }) {
           whileTap={{ scale: 0.9 }}
           onClick={item.action}
           className={StationName === item.title
-            ? "activeStation"
+            ? "active-station"
             : "station"}
         >
           <img
             className={StationName === item.title
-              ? "activeTriangle"
+              ? "active-triangle"
               : "triangle"}
             src={triangle}
             alt="" />
@@ -23,7 +23,7 @@ function RadioStations({ StationName, Videos }) {
         </motion.div>
       </motion.div>))
   return (
-    <div className="radioList">
+    <div className="radio-list">
       {videoItems}
     </div>
   );

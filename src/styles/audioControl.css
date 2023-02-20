@@ -1,5 +1,5 @@
 
-.audioControlContainer{
+.audio-control-container{
     height: 100%;
     width: 20vw;
     display: flex;
@@ -9,7 +9,7 @@
     z-index: 1;
   }
   
-  .audioControl{
+  .audio-control{
     width: 99%;
     height: 10vh;
     text-align: center;

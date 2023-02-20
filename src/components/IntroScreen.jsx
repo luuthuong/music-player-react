@@ -8,8 +8,8 @@ import URL_CONSTANT from "../constant/url.constant";
 const Hero = () => {
     return(
         <div>
-        <div className="heroContainer">
-          <div className="videoContainer2">
+        <div className="container">
+          <div className="video-intro-container">
             <ReactPlayer
               className="react-player"
               url={URL_CONSTANT.INTRO_EMMBED_VIDEO}
@@ -23,9 +23,9 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="titleContainer">
-          <img className="heroLogo" src={logo} alt="" />
-          <h1 className="tracking-in-expand-fwd">CHILL BEATS</h1>
+        <div className="title-container">
+          <img className="intro-logo" src={logo} alt="" />
+          <h1 className="tracking-in-expand-fwd">BEATS</h1>
           <h3 className="subTitle">Try to be better !!</h3>
           <div className="note-position-1 note-amination">&#9835;</div>
           <div className="note-position-2 note-amination animation-delay-2">
@@ -38,8 +38,11 @@ const Hero = () => {
           </div>
           <div className="wrap">
             <Link to="/music">
-                <button className="button">Start Listening</button>
-            </Link>         
+                <button className="button">Music</button>
+            </Link>   
+            <Link to="/podcast">
+                <button className="button">PodCast</button>
+            </Link>            
           </div>
         </div>
         <ReactPlayer 

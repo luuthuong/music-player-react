@@ -35,7 +35,7 @@ const AdditionSettings =  (props) => {
   });
   }
   const setTransition = () => {
-    setTransitionValue(0);
+    setTransitionValue(100);
   };
 
   setTimeout(function () {
@@ -49,28 +49,28 @@ const AdditionSettings =  (props) => {
   }, [props.radio]);
 
   return (
-    <div className="infoContainer">
+    <div className="info-container">
       <div className="time"></div>
-      <div className="songName">
+      <div className="song-name">
         <motion.div
           animate={{ x: transitionValue }}
           transition={{ delay: 1 }}
-          className="radioStationTitle"
+          className="radio-station-title"
           style={{ left: TitleLocation }}
         >
           {props.radio}
-          <div className="socialsContainer">
+          <div className="social-container">
             <a target="_blank" href={props.youtube}>
               {" "}
-              <img src={youtube} className="socialIcons" alt="" />{" "}
+              <img src={youtube} className="social-icon" alt="" />{" "}
             </a>
           </div>
         </motion.div>
       </div>
-      <div className="otherSoundsContainer">
-        <div className="allign">
+      <div className="other-sound-container">
+        <div className="align">
           <input
-            className="soundDial"
+            className="sound-dial"
             type="range"
             orient="vertical"
             min={0}
@@ -81,13 +81,13 @@ const AdditionSettings =  (props) => {
             }}
             step={0.2}
           />
-          <div className="otherSounds">
-            <img src={rain} className="imgSizing" alt="" />
+          <div className="other-sounds">
+            <img src={rain} className="img-sizing" alt="" />
           </div>
         </div>
-        <div className="allign">
+        <div className="align">
           <input
-            className="soundDial"
+            className="sound-dial"
             type="range"
             orient="vertical"
             min={0}
@@ -98,13 +98,13 @@ const AdditionSettings =  (props) => {
             }}
             step={0.2}
           />
-          <div className="otherSounds">
-            <img src={waves} className="imgSizing" alt="" />
+          <div className="other-sounds">
+            <img src={waves} className="img-sizing" alt="" />
           </div>
         </div>
-        <div className="allign">
+        <div className="align">
           <input
-            className="soundDial"
+            className="sound-dial"
             type="range"
             orient="vertical"
             min={0}
@@ -115,8 +115,8 @@ const AdditionSettings =  (props) => {
             }}
             step={0.2}
           />
-          <div className="otherSounds">
-            <img src={WhiteNoise} className="imgSizing" alt="" />
+          <div className="other-sounds">
+            <img src={WhiteNoise} className="img-sizing" alt="" />
           </div>
         </div>
       </div>
